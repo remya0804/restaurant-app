@@ -1,0 +1,1209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="img/icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+
+</head>
+<body>
+
+    <!-- header -->
+        <!-- ************************************************************** -->
+
+
+    <header>
+
+        <a href="" class="logo"> <i class="fa fa-cutlery" aria-hidden="true"></i> F<span>oo</span>dieHub</a>
+
+        <nav class="navbar">
+
+            <a href="#home" class="active">Home</a>
+            <a href="#dishes" >Dishes</a>
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#review">Review</a>
+            <a href="#order">Order</a>
+
+
+        </nav>
+
+        <div class="icons">
+
+            <i class="fa fa-bars" id="menu-bars" onclick="menuToggle()"></i>
+            <i class="fa fa-search" id="search-icon" onclick="openSearch()"></i>
+            <a href="" class="fa fa-heart"></a>
+            <a href="" class="fa fa-cart-arrow-down"></a>
+        </div>
+
+    </header>
+
+    <!-- searchform -->
+ <!-- ************************************************************** -->
+
+
+    <form action="" id="search-form">
+
+        <input type="search" id="search-box" placeholder="Search here">
+
+        <label for="search-box" class="fa fa-search"></label>
+
+        <i class="fa fa-times" aria-hidden="true" id="close-button" onclick="closeSearch()"></i>
+
+    </form>
+
+    <!-- home -->
+    <!-- ************************************************************** -->
+
+
+    <section class="home" id="home">
+
+        <div class="home-container swiper">
+
+            <div class="swiper-wrapper home-slidecontainer">
+
+                <div class="slide swiper-slide">
+
+                    <div class="slide-content">
+
+                        <span>our special dish</span>
+                        <h3>Malabar chicken biryani</h3>
+                        <p> Malabar chicken biryani is one of the most popular foods from kerala cuisine made with jeerakasala rice & spices.</p>
+                        <a class="button" href="#">order now</a>
+
+                    </div>
+
+                    <div class="slide-image">
+
+                        <img src="img/s1.jpeg" alt="">
+                    </div>
+                    
+                </div>
+                <div class="slide swiper-slide">
+
+                    <div class="slide-content">
+
+                        <span>our special dish</span>
+                        <h3>Kerala Parotta</h3>
+                        <p>Kerala Parotta Recipe is a flaky layered flatbread. It is a popular dish in South Indian & kerala dish which taste delicious.</p>
+                        <a class="button" href="#">order now</a>
+
+                    </div>
+
+                    <div class="slide-image">
+
+                        <img src="img/s2.jpeg" alt="">
+                    </div>
+
+                </div>
+                <div class="slide swiper-slide">
+
+                    <div class="slide-content">
+
+                        <span>our special dish</span>
+                        <h3>Onam Sadya</h3>
+                        <p>Sadya is a meal of Kerala origin, consisting of a variety of traditional vegetarian dishes usually served on a banana leaf as lunch.</p>
+                        <a class="button" href="#">order now</a>
+
+                    </div>
+
+                    <div class="slide-image">
+
+                        <img src="img/s3.jpeg" alt="">
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+        </div>
+
+    </section>
+
+    <!-- dishes -->
+    <!-- ************************************************************** -->
+
+    <section class="dishes" id="dishes">
+
+        <h3 class="subhead"> our dishes</h3>
+
+        <h1 class="head">Popular dishes</h1>
+
+        <div class="dishes-container">
+
+            <div class="dish-item">
+
+                <a href="" class="fa fa-heart"></a>
+                <a href="" class="fa fa-eye"></a>
+                <img src="img/d1.jpeg" alt="">
+                <h3>Special Lunch</h3>
+
+                <div class="stars">
+
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+
+                </div>
+
+                <span>$18.60</span>
+
+                <a href="" class="button">Add to cart</a>
+            </div>
+
+    
+            <div class="dish-item">
+
+                <a href="" class="fa fa-heart"></a>
+                <a href="" class="fa fa-eye"></a>
+                <img src="img/d2.jpeg" alt="">
+                <h3>Fish Fry</h3>
+
+                <div class="stars">
+
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+
+                <span>$16.90</span>
+                <a href="" class="button">Add to cart</a>
+
+            </div>
+
+            <!--  -->
+            <div class="dish-item">
+
+                <a href="" class="fa fa-heart"></a>
+                <a href="" class="fa fa-eye"></a>
+                <img src="img/d3.jpeg" alt="">
+                <h3>Kappa</h3>
+
+                <div class="stars">
+
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+
+                <span>$12.50</span>
+                <a href="" class="button">Add to cart</a>
+            </div>
+
+            <!--  -->
+            <div class="dish-item">
+
+                <a href="" class="fa fa-heart"></a>
+                <a href="" class="fa fa-eye"></a>
+                <img src="img/d4.jpeg" alt="">
+                <h3>Fish Curry</h3>
+
+                <div class="stars">
+
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+
+                <span>$15.20</span>
+                <a href="" class="button">Add to cart</a>
+
+            </div>
+
+            <div class="dish-item">
+
+                <a href="" class="fa fa-heart"></a>
+                <a href="" class="fa fa-eye"></a>
+                <img src="img/d5.jpeg" alt="">
+                <h3>Idiyappam</h3>
+
+                <div class="stars">
+
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+
+                <span>$10.60</span>
+                <a href="" class="button">Add to cart</a>
+
+            </div>
+
+            <!--  -->
+            <div class="dish-item">
+
+                <a href="" class="fa fa-heart"></a>
+                <a href="" class="fa fa-eye"></a>
+                <img src="img/d6.jpeg" alt="">
+                <h3>Chemmeen Roast</h3>
+
+                <div class="stars">
+
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+
+                <span>$11.30</span>
+                <a href="" class="button">Add to cart</a>
+
+            </div>
+
+        </div>
+        </div>
+
+    </section>
+
+ <!--  about -->
+        <!-- ************************************************************** -->
+
+        <section class="about" id="about">
+
+            <h3 class="subhead">about us</h3>
+
+            <h1 class="head"> Why choose Us?</h1>
+
+            <div class="about-container">
+
+                <div class="image">
+
+                    <img src="img/a5.avif" alt="">
+                </div>
+
+                <div class="about-content">
+
+                    <h3>FoodieHub</h3>
+                    <p>Established in 2005 serving authentic Kerala cuisine, FoodieHub has grown over the years to become a refuge for Malayalees craving a taste of home. We take pride in our food that is freshly prepared without any artificial colouring or preservatives. Kerala's long history as a trading region has given rise to a heady mix of influences which is expressed in the diversity of its dishes. Come try it for yourself today!</p>
+                    
+
+                    <div class="icon-container">
+
+                        <div class="icon">
+
+                            <i class="fa fa-truck" aria-hidden="true"></i>
+                            <span> Fast delivery</span>
+                            
+                        </div>
+                        <div class="icon">
+
+                            <i class="fa fa-usd" aria-hidden="true"></i>
+                            <span> Easy payment</span>
+
+                        </div>
+                        <div class="icon">
+
+                            <i class="fa fa-headphones" aria-hidden="true"></i>
+                            <span> 24/7 service</span>
+
+                        </div>
+
+                    </div>
+
+                    <a href="" class="button">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+         <!--  menu -->
+        <!-- ************************************************************** -->
+
+        <section class="menusection" id="menu">
+
+            <h3 class="subhead">our menu</h3>
+
+            <h1 class="head">Today's special</h1>
+
+            <div class="menu-container">
+
+                <div class="menu">
+
+                    <div class="image">
+
+                        <img src="img/m1.jpeg" alt="">
+
+                        <a href="" class="fa fa-heart"></a>
+
+                    </div>
+
+                    <div class="menu-content">
+
+                        <div class="stars">
+
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </div>
+
+                        <h3> Puttu and Kadala curry</h3>
+
+                        <p> A famous breakfast recipe out of the many Kerala dishes, Puttu is a cylindrical steamed rice cake that is cooked in a mould with grated coconut.</p>
+
+                        
+
+                    </div>
+
+                    <div class="bottom">
+
+                        <a href="" class="button">add to cart</a>
+
+                        <span>$12.70</span>
+
+                    </div>
+                </div>
+                <div class="menu">
+
+                    <div class="image">
+
+                        <img src="img/m2.jpeg" alt="">
+
+                        <a href="" class="fa fa-heart"></a>
+
+                    </div>
+
+                    <div class="menu-content">
+
+                        <div class="stars">
+
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </div>
+
+                        <h3> Dosa Ghee Roast With Sambar</h3>
+
+                        <p>Made from fermented rice and lentils, the ghee roast dosa is first cooked to perfection in pure ghee, and then roasted till it gets as crisp as it can.</p>
+
+                        
+
+
+                    </div>
+
+                    <div class="bottom">
+
+                        <a href="" class="button">add to cart</a>
+
+                        <span>$14.50</span>
+
+
+                    </div>
+                </div>
+                <div class="menu">
+
+                    <div class="image">
+
+                        <img src="img/m3.jpeg" alt="">
+
+                        <a href="" class="fa fa-heart"></a>
+
+                    </div>
+
+                    <div class="menu-content">
+
+                        <div class="stars">
+
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </div>
+
+                        <h3> Spicy Chicken Fry</h3>
+
+                        <p>Served with onion, spices, garlic, and vinegar on a banana leaf, Nadan Kozhi Varuthathu is fried chicken made with a generous amount of spices.</p>
+
+                    </div>
+
+                    <div class="bottom">
+
+                        <a href="" class="button">add to cart</a>
+
+                        <span>$18.60</span>
+
+                    </div>
+                </div>
+                <div class="menu">
+
+                    <div class="image">
+
+                        <img src="img/m4.jpeg" alt="">
+
+                        <a href="" class="fa fa-heart"></a>
+
+                    </div>
+
+                    <div class="menu-content">
+
+                        <div class="stars">
+
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </div>
+
+                        <h3> Prawn Curry</h3>
+
+                        <p>he traditional prawn curry of Kerala is sprinkled religiously with chilli and pepper, other than salt and turmeric, and is then cooked in whole coconut milk and jaggery before it is finally garnished with curry leaves.</p>
+
+                    </div>
+
+                    <div class="bottom">
+
+                        <a href="" class="button">add to cart</a>
+
+                        <span>$16.70</span>
+
+                    </div>
+                </div>
+                <div class="menu">
+
+                    <div class="image">
+
+                        <img src="img/m5.jpeg" alt="">
+
+                        <a href="" class="fa fa-heart"></a>
+
+                    </div>
+
+                    <div class="menu-content">
+
+                        <div class="stars">
+
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </div>
+
+                        <h3> Karimeen Pollichathu</h3>
+
+                        <p>The dish is prepared by marinating the fish in a mixture of lemon juice, red chillies, and other ingredients (most of which are varieties of spices!), and then wrapped and baked in plantain leaves.</p>
+
+    
+                    </div>
+
+                    <div class="bottom">
+
+                        <a href="" class="button">add to cart</a>
+
+                        <span>$17.90</span>
+
+                    </div>
+                </div>
+                <div class="menu">
+
+                    <div class="image">
+
+                        <img src="img/m6.jpeg" alt="">
+
+                        <a href="" class="fa fa-heart"></a>
+
+                    </div>
+
+                    <div class="menu-content">
+
+                        <div class="stars">
+
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </div>
+
+                        <h3> Thalassery Biryani</h3>
+
+                        <p>One can enjoy the taste of Chicken 65 or Chilly Chicken Stir Fry with a sumptuous platter of Kozhikode or Thalassery Biryani for the ultimate biryani experience.</p>
+
+                        
+                    </div>
+
+                    <div class="bottom">
+                        <a href="" class="button">add to cart</a>
+
+                        <span>$22.90</span>
+
+                    </div>
+                </div>
+                <div class="menu">
+
+                    <div class="image">
+
+                        <img src="img/m7.jpeg" alt="">
+
+                        <a href="" class="fa fa-heart"></a>
+
+                    </div>
+
+                    <div class="menu-content">
+
+                        <div class="stars">
+
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </div>
+
+                        <h3> Mussel Stir Fry</h3>
+
+                        <p>The mussels are first cleaned out with care and then cooked in shallots, garlic, chillies, turmeric, garam masala, and a heavy dose of grated coconut. </p>
+
+                    </div>
+
+                    <div class="bottom">
+
+                        <a href="" class="button">add to cart</a>
+
+                        <span>$19.50</span>
+
+                    </div>
+                </div>
+                <div class="menu">
+
+                    <div class="image">
+
+                        <img src="img/m8.jpeg" alt="">
+
+                        <a href="" class="fa fa-heart"></a>
+
+                    </div>
+
+                    <div class="menu-content">
+
+                        <div class="stars">
+
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </div>
+
+                        <h3> Fried-Ground Mutton Curry</h3>
+
+                        <p>he preparation usually involves frying and grinding the spices before mixing them in a base of mutton, onions and tomatoes</p>
+
+                    </div>
+
+                    <div class="bottom">
+
+                        <a href="" class="button">add to cart</a>
+
+                        <span>$18.70</span>
+                    </div>
+                </div>
+                <div class="menu">
+
+                    <div class="image">
+
+                        <img src="img/m9.jpeg" alt="">
+
+                        <a href="" class="fa fa-heart"></a>
+
+                    </div>
+
+                    <div class="menu-content">
+
+                        <div class="stars">
+
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </div>
+
+                        <h3>  Malabar Parota</h3>
+
+                        <p>It has a crispy, flaky along with crumbly texture leaving a sweet yet savoury taste within your mouth.</p>
+
+                    </div>
+
+                    <div class="bottom">
+
+                        <a href="" class="button">add to cart</a>
+
+                        <span>$10.70</span>
+
+                    </div>
+                </div>
+                <div class="menu">
+
+                    <div class="image">
+
+                        <img src="img/m10.jpeg" alt="">
+
+                        <a href="" class="fa fa-heart"></a>
+
+                    </div>
+
+                    <div class="menu-content">
+
+                        <div class="stars">
+
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </div>
+
+                        <h3> Palada Payasam</h3>
+
+                        <p>Palada Payasam is a sweet rice kheer prepared with palada</p>
+
+                    </div>
+                    <div class="bottom">
+
+                        <a href="" class="button">add to cart</a>
+
+                        <span>$15.20</span>
+
+                    </div>
+                </div>
+                <div class="menu">
+
+                    <div class="image">
+
+                        <img src="img/m11.jpeg" alt="">
+
+                        <a href="" class="fa fa-heart"></a>
+
+                    </div>
+
+                    <div class="menu-content">
+
+                        <div class="stars">
+
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </div>
+
+                        <h3> Chatti Pathiri</h3>
+
+                        <p>A layered pastry made in North Malabar and Malabar regions of Kerala, Chatti Pathiri is similar to the Italian lasagna</p>
+
+                    </div>
+
+                    <div class="bottom">
+
+                        <a href="" class="button">add to cart</a>
+
+                        <span>$17.50</span>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+ <!-- review -->
+        <!-- ************************************************************** -->
+        
+
+        <section class="review" id="review"> 
+
+            <h3 class="subhead">customer reviews</h3>
+
+            <h1 class="head">what they say</h1>
+
+            <div class="swiper review-container"> <!--  -->
+
+                <div class="slides swiper-wrapper"><!--  -->
+
+                    <div class="swiper-slide slide"> <!--  -->
+
+                        <i class="fa fa-quote-right" aria-hidden="true"></i>
+
+                        <div class="user">
+
+                            <img src="img/r1.jpeg" alt="">
+
+                            <div class="user-info">
+
+                                <h3>Nayanthara</h3>
+
+                                <div class="stars">
+
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+                        <p>Kerala is perhaps the only place in India where you can still eat beef without any constraints or guilt. Nadan Beef is among the most popular Kerala dishes that is either roasted or cooked in thick gravy. It is cooked to perfection for that perfect melt-in-the-mouth consistency before being served with Porotta, chapatti, or rice. Beef lovers, here’s another fabulous reason for you to escape to Kerala!</p>
+
+                    </div>
+
+                    <!-- end of each slide -->
+                    <div class="slide swiper-slide">
+
+                        <i class="fa fa-quote-right" aria-hidden="true"></i>
+
+                        <div class="user">
+
+                            <img src="img/r2.jpeg" alt="">
+
+                            <div class="user-info">
+
+                                <h3>Pridhwiraj</h3>
+
+                                <div class="stars">
+
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+                        <p>An absolutely sensational element of Kerala food, the Kerala Style Fish Molee is a favourite of all residing in and visiting Kerala. The significant flavour of coconut and kocoum, also know as Kudampuli will simply blow your senses! All seafood lovers must try this dish at least once in their life to take the concept of fine dining to a whole new level!</p>
+
+                    </div>
+
+                    <!-- end of each slide -->
+                    <div class="slide swiper-slide">
+
+                        <i class="fa fa-quote-right" aria-hidden="true"></i>
+
+                        <div class="user">
+
+                            <img src="img/r3.jpeg" alt="">
+
+                            <div class="user-info">
+
+                                <h3>Naslen</h3>
+
+                                <div class="stars">
+
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+                        <p>Karimeen Pollichathu is a dish made out of the Pearl Spot Fish, a speckled fish commonly found in the backwaters of this Alleppey and Kumarakom. Karimeen Pollichathu is originally a Syrian Christian delicacy but has now become part of the rich Kerala cuisine. The dish is prepared by marinating the fish in a mixture of lemon juice, red chillies, and other ingredients (most of which are varieties of spices!), and then wrapped and baked in plantain leaves. Its exotic style of preparation gives it a rich, unique flavour and leaves diners asking for more!</p>
+
+                    </div>
+
+                    <!-- end of each slide -->
+                    <div class="slide swiper-slide">
+
+                        <i class="fa fa-quote-right" aria-hidden="true"></i>
+
+                        <div class="user">
+
+                            <img src="img/r4.jpeg" alt="">
+
+                            <div class="user-info">
+
+                                <h3>Anaswara Rajan</h3>
+
+                                <div class="stars">
+
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+                        <p>Want to add spice on your palate? Then, you must try one of the national foods of Kerala that is spicy chicken fry or Kerala style prawn curry as there is no single national food of Kerala. Served with onion, spices, garlic, and vinegar on a banana leaf, Nadan Kozhi Varuthathu is fried chicken made with a generous amount of spices. One can have it with chapattis, Kerala Porotta (a layered flatbread made from maida flour), appam or rice. It also serves as a popular street food in the list of Kerala dishes served with dosa. Have Nadan Kozhi Varuthathu on your next trip to Kerala and you’ll forget KFC for sure!</p>
+
+                    </div>
+
+                    <!-- end of each slide -->
+                    <div class="slide swiper-slide">
+
+                        <i class="fa fa-quote-right" aria-hidden="true"></i>
+
+                        <div class="user">
+
+                            <img src="img/r5.jpeg" alt="">
+
+                            <div class="user-info">
+
+                                <h3>Dulquer Salman</h3>
+
+                                <div class="stars">
+
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+                        <p>How about relishing some South Indian cuisine in Kerala? Idli Sambhar is one of the best foods in Kerala which is good to go for breakfast and the best healthy food in Kerala as well. Perhaps the most famous food of Kerala, idli sambar are fondly eaten in not just all households in Kerala, but everywhere else in India! The perfect combination of fermented rice cakes and a deliciously tangy curry of aromatic spices and vegetables like lentils. Apart from being a favourite of foodies for its taste, idli sambar is also universally accepted for the health benefits it bears.</p>
+
+                    </div>
+
+                    <!-- end of each slide -->
+                    <div class="slide swiper-slide">
+
+                        <i class="fa fa-quote-right" aria-hidden="true"></i>
+
+                        <div class="user">
+
+                            <img src="img/r6.jpeg" alt="">
+
+                            <div class="user-info">
+
+                                <h3>Vijay</h3>
+
+                                <div class="stars">
+
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+                        <p>Food connects us all and if you are looking to have the best food in Kerala then do try dosa Ghee roast with Kerala style Sambhar which will blast your mouth with awesome flavours. Listed among the ‘World’s 50 Most Delicious Foods’, dosa and sambar are among the famous cuisine of Kerala which make up for a deadly combination! Made from fermented rice and lentils, the ghee roast dosa is first cooked to perfection in pure ghee, and then roasted till it gets as crisp as it can. It is, no doubt, the best food in Kerala district</p>
+
+                    </div>
+
+                    <!-- end of each slide -->
+                    <div class="slide swiper-slide">
+
+                        <i class="fa fa-quote-right" aria-hidden="true"></i>
+
+                        <div class="user">
+
+                            <img src="img/r7.jpeg" alt="">
+
+                            <div class="user-info">
+
+                                <h3>Samantha</h3>
+
+                                <div class="stars">
+
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+                        <p>If you are searching to have some good food to eat in Kerala then you must try out this delicacy of Kerala known as Parippu curry. Though unexpected, it is actually one of the most delicious of Kerala food items. The Dal Curry served in Kerala is made from small gram and ghee with a considerable amount of spices and chillies. Don’t skip on this one by mistaking it for your typical ‘ghar ki dal’! You will certainly be disappointed if you do so, trust us!</p>
+
+                    </div>
+
+                    <!-- end of each slide -->
+
+
+                </div>
+            </div>
+
+
+        </section>
+
+        <!-- order -->
+        <!-- ***************************************************** -->
+
+        <section class="order" id="order">
+
+            <h3 class="subhead">order now</h3>
+
+            <h1 class="head">Free & Fast</h1>
+
+            <form action="">
+
+                <div class="order-info">
+
+                    <div class="info-container">
+
+                        <span>Name</span>
+
+                        <input type="text" placeholder="Enter your name">
+                        
+                    </div>
+                    <div class="info-container">
+
+                        <span>Contact Number</span>
+
+                        <input type="number" placeholder="Enter your mobile number">
+
+                    </div>
+                </div>
+
+                <div class="order-info">
+
+                    <div class="info-container">
+
+                        <span>Your Order</span>
+
+                        <input type="number" placeholder="Enter item name">
+
+                    </div>
+                    <div class="info-container">
+
+                        <span>Additional Items</span>
+
+                        <input type="number" placeholder="Enter additional item name">
+
+                    </div>
+
+                    
+                </div>
+
+                <div class="order-info">
+
+                    <div class="info-container">
+
+                        <span>Quantity</span>
+
+                        <input type="number" placeholder="enter quantity">
+
+                    </div>
+                    <div class="info-container">
+
+                        <span>date</span>
+
+                        <input type="datetime-local" placeholder="enter date">
+
+                    </div>
+
+                    
+                </div>
+
+                <div class="order-info">
+
+                    <div class="info-container">
+
+                        <span>Address</span>
+
+                        <textarea name="" id="" cols="30" rows="30" placeholder="Enter your address"></textarea>
+
+                    </div>
+                    <div class="info-container">
+
+                        <span>Message</span>
+
+                        <textarea name="" id="" cols="30" rows="30" placeholder="Enter your message"></textarea>
+
+                    </div>
+
+                    
+                </div>
+
+                <button type="submit" class="button">Submit</button>
+            </form>
+
+        </section>
+
+
+         <!--  loader -->
+        <!-- ************************************************************** -->
+
+        <div class="loader-container">
+
+            <img src="img/loader.gif" alt="">
+            
+        </div>
+
+
+         <!--  swiper script -->
+        <!-- ************************************************************** -->
+
+        <section class="footer">
+
+            <div class="footer-container">
+
+                <div class="footer-item">
+
+                    <h3>Locations</h3>
+
+                    <a href="">India</a>
+                    <a href="">Singapore</a>
+                    <a href="">UAE</a>
+                    <a href="">Qatar</a>
+                    <a href="">Maldives</a>
+
+                </div>
+                <div class="footer-item">
+
+                    <h3>quick links</h3>
+
+                    <a href="">home</a>
+                    <a href="">about</a>
+                    <a href="">menu</a>
+                    <a href="">review</a>
+                    <a href="">order</a>
+
+                </div>
+                <div class="footer-item">
+
+                    <h3>Contact Us</h3>
+
+                    <a href="">+111 2234 6767 </a>
+                    <a href="">+111 5667 2443</a>
+                    <a href="">azzk@gmail.com</a>
+                    <a href="">azzk123@gmail.com</a>
+                    <a href="">Trivandrum, Kerala</a>
+
+                </div>
+                <div class="footer-item">
+
+                    <h3>Follow Us</h3>
+
+                    <a href="">Facebook </a>
+                    <a href="">Twitter</a>
+                    <a href="">Instagram</a>
+                    <a href="">Linked In</a>
+                    
+
+                </div>
+
+
+            </div>
+
+            <div class="credit">Copyright @ 2024 by <span>xyz</span></div>
+        </section>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="script.js"></script>
+
+    <!--  swiper script -->
+        <!-- ************************************************************** -->
+
+    <script>
+
+        var swiper = new Swiper(".home-container", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 7500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            loop:true,
+            });
+
+            // swiper for reviews
+            // ///////////////////////////
+
+
+        var swiper = new Swiper(".review-container", {
+            spaceBetween: 20,  // changed
+            centeredSlides: true,
+            autoplay: {
+                delay: 7500,
+                disableOnInteraction: false,
+            },
+            // pagination: {
+            //     el: ".swiper-pagination",
+            //     clickable: true,
+            // },
+            loop:true,
+
+            breakpoints: {  // added
+
+                0: {
+
+                    slidesPerView:1,
+                },
+                640: {
+
+                    slidesPerView:1,
+                },
+                768: {
+
+                    slidesPerView:1,
+                },
+                1024: {
+
+                    slidesPerView:3,
+                },
+                
+            },
+            });
+
+    </script>
+    
+</body>
+</html>

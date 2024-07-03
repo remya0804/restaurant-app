@@ -1,0 +1,131 @@
+1. icon in title 
+
+    <link rel="shortcut icon" href="img/icon.png" type="image">
+
+2. to add font awesome icons
+
+    copy cdn, add to href in link tag
+    then copy icon code
+
+3. overflow
+
+    specifies whether to clip the content or to add scrollbars,
+    when the content of an element is too big to fit in the specified area.
+
+    visible - Default. The overflow is not clipped. The content renders outside the element's box
+    hidden - The overflow is clipped, and the rest of the content will be invisible
+    scroll - The overflow is clipped, and a scrollbar is added to see the rest of the content
+    auto - Similar to scroll, but it adds scrollbars only when necessary
+
+4. scroll padding
+
+    allows to stay content at a distance from sides(top/left/right/bottom )
+
+5. inline-block
+
+        Compared to display: block,  
+        display: inline-block does not add a line-break after the element, 
+        so the element can sit next to other elements.
+
+        allows to set a width and height on the element.
+
+6. to remove the default close button at the end of form search bar
+
+    #search-form #search-box::-webkit-search-cancel-button{
+
+    appearance: none;
+
+    }
+
+7. toggle claas
+
+    menubarElement.classList.toggle("fa-times");
+
+8. remove class 
+
+    navbarElement.classList.remove("show-menu");
+
+9. flex-wrap: wrap;
+
+    nowrap	Default value. Specifies that the flexible items will not wrap	
+    wrap	Specifies that the flexible items will wrap if necessary	
+    wrap-reverse	Specifies that the flexible items will wrap, if necessary, in reverse order
+
+10. swiper
+
+    Swiper is a popular JavaScript library for creating touch-friendly and responsive slider/carousel components for websites and web applications.
+
+    a. copy cdn
+    b. paste css in: head
+    c. paste js link above : body end
+    d. demo-- (autoflow) for this pjt
+    e. canselect core 
+    f. from html copy and apply class stylesto element
+    g. copy js code
+
+11. to apply hover to child elmt  while hovering parent elmt
+
+    .dishes .dishes-container .dish-item:hover .fa-eye{
+
+        left: 1.5rem;
+
+    }
+
+12. grid template close
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(28rem,1fr));
+
+    ie,
+    minimum of 28rem and a maximum of 1 fraction unit of the available space
+
+
+    the auto-fill property will allow empty spaces in a row whereas in 
+    the auto-fit property the content will stretch itself that it can fill the row entirely.
+
+13. flex
+
+    flex: grow shrink basis
+
+    flex-grow makes the element larger than the other elements by a certain amount of times
+    flex-shrink is the opposite of flex-grow and makes element smaller than the other elements by a certain amount of times
+    flex-basis specifies the initial length of a flexible item
+
+14. to make all div same height depeding on tallest div
+
+    height: auto
+
+15. diff between add,remove,toggle
+
+addClass() method adds a class to the selector 
+
+ removeClass() removes the CSS class for the selector. 
+ 
+ The toggleClass() method switches between these
+  as the event fire each time the class gets added and removed as the event fires.
+
+16. scrollY
+
+     The scrollY property returns the pixels a document has scrolled from the upper left corner of the window.
+
+17. offsetHeight
+
+    The offsetHeight property returns the viewable height of an element (in pixels), including padding, border and scrollbar, but not the margin.
+
+ 18. offsetTop
+ 
+    The offsetTop property returns the top position (in pixels) relative to the parent.
+
+19.  getAttribute()
+
+    The getAttribute() method returns the value of an element's attribute.
+
+20.  [attribute*="value"]
+
+    The [attribute*="value"] selector is used to select elements whose attribute value contains a specified value.
+
+    [class*="te"] {
+    background: yellow;
+    }
+
+    select all class names that contains letters te
